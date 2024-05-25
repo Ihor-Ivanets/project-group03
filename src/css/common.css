@@ -36,6 +36,34 @@ body {
   color: #ecd979;
 }
 
+.btn {
+  min-width: 145px;
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background-color: transparent;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #fcf9f9;
+  transition: border 0.2s cubic-bezier(0.34, 0.78, 0.68, 0.41);
+}
+
+.btn-icon {
+  fill: #ecd979;
+  transform: rotate(-30deg);
+}
+
+.btn:hover,
+.btn:focus {
+  border: 1px solid #ecd979;
+}
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
