@@ -96,3 +96,12 @@
 }
 
 }
+@media screen and (min-width:1440px) {
+    .testimonials {
+            padding-top: 75px;
+            padding-bottom: 16px;
+        }
+.testimonials-main-title {
+    margin-bottom: 157px;
+
+    }}
