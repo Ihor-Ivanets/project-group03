@@ -1,3 +1,4 @@
+ /* ======HEADER====== */
  .header-nav {
      display: flex;
  }
@@ -67,12 +68,13 @@
     fill:#fcf9f9;
 }
 
-.header-social-list {
+.header-social {
     border: 1px solid rgba(252, 249, 249, 0.1);
     border-radius: 15px;
     padding: 8px;
     width: 44px;
     height: 44px;
+    display: flex;
     background: rgba(252, 249, 249, 0.1);
 }
 
@@ -98,7 +100,7 @@ box-shadow: #ecd979;
 transition: 0.2s cubic-bezier(0.34, 0.78, 0.68, 0.41);
         }
         
-.header-social:hover
+.header-social:hover,
 .header-social:focus {
     border-color: #ecd979;
    
