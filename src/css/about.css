@@ -1,0 +1,35 @@
+.about-us-section {
+display: flex;
+font-family: var(--font-family);
+}
+
+.about-us-name {
+width: 335px;
+height: 957px;
+}
+
+.about-us-list {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 137%;
+    letter-spacing: -0.03em;
+    color: var(--white);
+}
+
+.about-us-item {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.04em;
+    color: rgba(252, 249, 249, 0.4);
+}
+
+.about-us-img {
+
+}
+
+.img-list {
+    border-radius: 4px;
+    width: 335px;
+    height: 499px;
+    background: url("path_to_image");
+}
