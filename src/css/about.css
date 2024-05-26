@@ -1,55 +1,67 @@
-.container {
-    min-width: 320px;
-    max-width: 375px;
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: black;
-}
-
-.about-us-name {
-    width: 349px;
-    justify-content: start;
-}
-
-.about-us-list {
-    display: flex;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 137%;
-    letter-spacing: -0.03em;
-    color: var(--white);
-    padding: 40px;
-}
-
-.about-us-item {
-    font-weight: 400;
+.container-about {
+    padding-top: 40px;
+    padding-bottom: 62px;
+    background-image: url('../img/bg/bg-element-grey.svg');
+    background-repeat: no-repeat;
+    background-size: auto 408px;
+    background-position: right -205px bottom 0px;
+  }
+  
+  .about-title {
+    margin-bottom: 40px;
+  }
+  
+  .about-text-wrapper {
+    margin-bottom: 50px;
+  }
+  
+  .about-text {
     font-size: 14px;
+    line-height: 1.4;
     letter-spacing: -0.04em;
     color: rgba(252, 249, 249, 0.4);
-    padding: 20px;
-}
-
-.about-us-img {
-    padding: 50px;
-}
-
-.img-list {
-    display: block;
-	max-width: 100%;
-    border-radius: 4px;
-    object-fit: none;
-    background: url("path_to_image");
-}
-
-@media screen and (min-width: 768px) {
- 
+  }
+  
+  .about-text:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .container-about {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      background-size: auto 484px;
+    }
+  
+    .about-text-wrapper {
+      margin-bottom: 50px;
+    }
+  
+    .about-text {
+      font-size: 16px;
+    }
   }
   
   @media screen and (min-width: 1280px) {
-
+    .container-about {
+      padding-top: 75px;
+      padding-bottom: 75px;
+      display: flex;
+      align-items: center;
+      column-gap: 50px;
+    }
+  
+    .about-content-wrapper {
+      max-width: 536px;
+    }
+  
+    .about-images {
+      flex-shrink: 0;
+    }
   }
   
   @media screen and (min-width: 1440px) {
-
-}
+    .container-about {
+      background-position: right 0px bottom 0px;
+    }
+  }
