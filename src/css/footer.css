@@ -1,1 +1,149 @@
+/*------Mobile------*/
 
+
+.footer {
+    background-image: url(../img/bg/yellowPNGtablet.png);
+    background-repeat: no-repeat;
+    background-position:  left -38px top 437px;
+    border-top: 1px solid rgba(252, 249, 249, 0.1);
+    padding-top: 40px ;
+    padding-bottom: 275px;
+}
+    
+
+ .footer-menu {
+    display: flex; 
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+     
+ }
+
+ .footer-menu-link {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 25px;
+    transition: color 0.2s cubic-bezier(0.34, 0.78, 0.68, 0.41);
+ }
+
+
+ .title-footer {
+     font-weight: 400;
+     font-size: 44px;
+     line-height: 54px;
+     letter-spacing: -0.03em;
+     text-align: left;
+ }
+
+ .footer-menu-item {
+    flex-basis: calc((100% - 40px) / 2);
+    padding-bottom: 25px;
+
+}
+
+li:nth-child(2) {
+    order: 3;
+}
+
+li:nth-child(3) {
+    order: 2;
+}
+
+li:nth-child(4) {
+    order: 4;
+}
+
+li:nth-child(1) {
+    order: 1;
+}
+
+ .footer-menu-item:hover,
+ .footer-menu-item:focus {
+     color: rgba(236, 217, 121, 1);
+ }
+
+ 
+ 
+
+/*------Tablet------*/
+
+@media screen and (min-width: 768px) {
+    .footer{
+            background-image: url(../img/bg/yellowPNGtablet.png);
+            background-position: top -14px left 594px;
+            padding-bottom: 40px;
+        }
+
+    .title-footer {
+            font-size: 54px;
+            line-height: 64px;
+            max-width: 521px; 
+    }
+
+
+        .footer-menu {
+            display: flex;
+            flex-wrap:nowrap;
+            gap: 25px;
+            padding-top: 0px;
+            padding-bottom: 79px;
+            margin-bottom: 0px;
+    
+        }
+        .footer-menu-item {
+            flex-basis:auto;
+             padding-bottom: 0px;
+         }
+                 li:nth-child(1) {
+                     order: 1;
+                 }
+        
+                 li:nth-child(2) {
+                     order: 2;
+                 }
+        
+                 li:nth-child(3) {
+                     order: 3;
+                 }
+        
+                 li:nth-child(4) {
+                     order: 4;
+                 }
+}
+
+/*------Desktop 1280------*/
+
+
+@media screen and (min-width: 1280px) {
+    .footer{
+        background-image: url(/img/bg/yellowPNG.png);
+        background-position: top -61px left 944px;
+    }
+
+    .footer-menu {
+         padding-bottom: 116px;
+         
+    
+    }
+
+    .title-footer {
+        font-size: 64px;
+        line-height: 74px;
+        max-width: 754px;
+    }
+}
+
+/*------Desktop 1440------*/
+
+@media screen and (min-width: 1158px) {
+    .footer{
+        background-image: url(/img/bg/yellowPNG.png);
+        background-size: auto;
+    }
+
+
+    .title-footer {
+         font-size: 64px;
+         line-height: 74px;
+        }
+
+}
