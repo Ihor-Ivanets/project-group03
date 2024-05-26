@@ -1,19 +1,25 @@
-.about-us-section {
-display: flex;
-font-family: var(--font-family);
+.container {
+    min-width: 320px;
+    max-width: 375px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: black;
 }
 
 .about-us-name {
-width: 335px;
-height: 957px;
+    width: 349px;
+    justify-content: start;
 }
 
 .about-us-list {
+    display: flex;
     font-weight: 500;
     font-size: 32px;
     line-height: 137%;
     letter-spacing: -0.03em;
     color: var(--white);
+    padding: 40px;
 }
 
 .about-us-item {
@@ -21,15 +27,29 @@ height: 957px;
     font-size: 14px;
     letter-spacing: -0.04em;
     color: rgba(252, 249, 249, 0.4);
+    padding: 20px;
 }
 
 .about-us-img {
-
+    padding: 50px;
 }
 
 .img-list {
+    display: block;
+	max-width: 100%;
     border-radius: 4px;
-    width: 335px;
-    height: 499px;
+    object-fit: none;
     background: url("path_to_image");
+}
+
+@media screen and (min-width: 768px) {
+ 
+  }
+  
+  @media screen and (min-width: 1280px) {
+
+  }
+  
+  @media screen and (min-width: 1440px) {
+
 }
