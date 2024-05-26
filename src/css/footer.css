@@ -1,182 +1,149 @@
 /*------Mobile------*/
 
 
-.footer-img {
+.footer {
     background-image: url(../img/bg/yellowPNGtablet.png);
     background-repeat: no-repeat;
-    background-position:  left 450px;  
-    height: 637px;
-    background-position-x: center;
-    border: 1px solid rgba(252, 249, 249, 0.1);
+    background-position:  left -38px top 437px;
+    border-top: 1px solid rgba(252, 249, 249, 0.1);
+    padding-top: 40px ;
+    padding-bottom: 275px;
 }
     
 
- .container {
-     min-width: 320px;
-     max-width: 375px;
-     margin: 0 auto;
-     padding-left: 20px;
-     padding-right: 20px;
-    
- }
-
-
- .nav-list-footer {
-    columns: 2;
-    column-gap: 0;
-    margin-top: 40px;
-    margin-bottom: 40px;
+ .footer-menu {
+    display: flex; 
+    flex-wrap: wrap;
+    margin-bottom: 14px;
      
  }
 
- .nav-link-footer {
+ .footer-menu-link {
+    font-size: 14px;
+    line-height: 18px;
     margin-bottom: 25px;
+    transition: color 0.2s cubic-bezier(0.34, 0.78, 0.68, 0.41);
  }
 
 
  .title-footer {
-     max-width: 335px;
-     max-height: 216px;
-     font-family: 'Manrope';
-     font-size: 44px;
      font-weight: 400;
+     font-size: 44px;
      line-height: 54px;
      letter-spacing: -0.03em;
      text-align: left;
  }
 
+ .footer-menu-item {
+    flex-basis: calc((100% - 40px) / 2);
+    padding-bottom: 25px;
 
- .nav-link-footer:hover,
- .nav-link-footer:focus {
+}
+
+li:nth-child(2) {
+    order: 3;
+}
+
+li:nth-child(3) {
+    order: 2;
+}
+
+li:nth-child(4) {
+    order: 4;
+}
+
+li:nth-child(1) {
+    order: 1;
+}
+
+ .footer-menu-item:hover,
+ .footer-menu-item:focus {
      color: rgba(236, 217, 121, 1);
  }
 
- .ukrainian-span {
-     color: rgba(236, 217, 121, 1);
- }
-
- .nav-footer {
-     font-family: 'Manrope';
-     font-size: 14px;
-     font-weight: 400;
-     line-height: 18px;
-     text-align: left;
- }
+ 
  
 
 /*------Tablet------*/
 
 @media screen and (min-width: 768px) {
-    .footer-img {
+    .footer{
             background-image: url(../img/bg/yellowPNGtablet.png);
-            background-repeat: no-repeat;
             background-position: top -14px left 594px;
-            margin: 0 auto;
-            height: 370px;
+            padding-bottom: 40px;
         }
 
     .title-footer {
-            max-width: 521px;
-            max-height: 192px;
-            font-family: 'Manrope';
             font-size: 54px;
-            font-weight: 400;
             line-height: 64px;
-            letter-spacing: -0.03em;
-            text-align: left;
+            max-width: 521px; 
     }
 
-    .container {
-           max-width: 768px;
-           padding-left: 32px;
-           padding-right: 32px;
-}
 
-        .nav-list-footer {
+        .footer-menu {
             display: flex;
+            flex-wrap:nowrap;
             gap: 25px;
-            padding-top: 40px;
-            padding-bottom: 71px;
-            margin: 0 auto;
+            padding-top: 0px;
+            padding-bottom: 79px;
+            margin-bottom: 0px;
     
         }
+        .footer-menu-item {
+            flex-basis:auto;
+             padding-bottom: 0px;
+         }
+                 li:nth-child(1) {
+                     order: 1;
+                 }
+        
+                 li:nth-child(2) {
+                     order: 2;
+                 }
+        
+                 li:nth-child(3) {
+                     order: 3;
+                 }
+        
+                 li:nth-child(4) {
+                     order: 4;
+                 }
 }
 
 /*------Desktop 1280------*/
 
 
 @media screen and (min-width: 1280px) {
-    .footer-img {
+    .footer{
         background-image: url(/img/bg/yellowPNG.png);
-        background-repeat: no-repeat;
         background-position: top -61px left 944px;
-        margin: 0 auto;
-        height: 363px;
     }
 
-    .container {
-        max-width: 1280px;
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
-    .nav-list-footer {
-         display: flex;
-         gap: 25px;
-         padding-top: 40px;
-         padding-bottom: 91px;
-         margin: 0 auto;
+    .footer-menu {
+         padding-bottom: 116px;
          
     
     }
 
     .title-footer {
-        max-width: 754px;
-        max-height: 148px;
-        font-family: 'Manrope';
         font-size: 64px;
-        font-weight: 400;
         line-height: 74px;
-        letter-spacing: -0.03em;
-        text-align: left;
+        max-width: 754px;
     }
 }
 
 /*------Desktop 1440------*/
 
 @media screen and (min-width: 1158px) {
-    .footer-img {
+    .footer{
         background-image: url(/img/bg/yellowPNG.png);
         background-size: auto;
-        background-repeat: no-repeat;
-        background-position: top -61px left 944px;;
-        margin: 0 auto;
-        height: 363px;
     }
 
-    .container {
-        max-width: 1440px;
-        padding-left: 100px;
-        padding-right: 100px;
-    }
 
     .title-footer {
-         max-width: 754px;
-         max-height: 148px;
-         font-family: 'Manrope';
          font-size: 64px;
-         font-weight: 400;
          line-height: 74px;
-         letter-spacing: -0.03em;
-         text-align: left;
-        }
-
-        .nav-list-footer {
-        display: flex;
-        gap: 25px;
-        padding-top: 40px;
-        padding-bottom: 91px;
-        margin: 0 auto;
         }
 
 }
