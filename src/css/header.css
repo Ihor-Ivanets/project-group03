@@ -1,196 +1,146 @@
  /* ======HEADER====== */
- .header-nav {
-     display: flex;
- }
- .logo-header {
+  
+ .container-header {
     display: flex;
-    margin-top: 24px;
-    margin-right: 60px;
+    align-items: center;
+    column-gap: 12px;
  }
 
- .header-div-header {
-     display: flex;
-     justify-content: space-between;
+ .logo {
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
  }
-    .header-list-header {
+
+ .header-menu {
+    display: none;
+ }
+
+ .header-contacts {
+    display: none;
+ }
+
+ .header-social {
+    display: flex;
+    column-gap: 12px;
+    flex-grow: 1;
+   
+ }
+
+ .header-social-link {
+     border: 1px solid rgba(252, 249, 249, 0.1);
+     border-radius: 15px;
+     padding: 8px;
+     width: 44px;
+     height: 44px;
+     display: inline-block;
+     background-color: rgba(252, 249, 249, 0.1);
+     fill: #fcf9f9;
+     transition: border-color 0.2s cubic-bezier(0.34, 0.78, 0.68, 0.41);
+ }
+
+
+
+ .header-social-link:hover,
+ .header-social-link:focus {
+     border-color: #ecd979;
+
+     
+ }
+
+ .header-btn-open {
+     stroke: #ecd979;
+     background-color: transparent;
+ }
+
+ .burger-btn-open-icon {
+     line-height: 0;
+     display: block;
+ }
+
+
+ @media screen and (min-width:768px) {
+    .header-social {
+        justify-content: flex-end;
+    }
+ }
+
+ @media screen and (min-width:1280px) {
+
+
+    .header-nav {
         display: flex;
-        text-align: center;
-        gap: 25px;
-        margin-top: 35px;
+        column-gap: 60px;
+        align-items: center;
+
+    }
+    
+    .header-menu {
+            display: flex;
+            gap: 25px;
     
         }
 
-    .header-button-about {
-        font-family: "Manrope", sans-serif;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.28571;
-        text-transform: uppercase;
-        color: #fcf9f9;
+        .header-menu-link {
+            display: block;
+            font-size: 14px;
+            line-height: 1.2;
+            text-transform: uppercase;
+            padding-top: 37px;
+            padding-bottom: 37px;
+            transition: color 0.2s cubic-bezier(0.34, 0.78, 0.68, 0.41);
+        }
+
+     .header-menu-link:hover,
+     .header-menu-link:focus {
+                    color: #ecd979;
+                    
                 }
 
-    .header-list-all {
-        display: flex;
-        gap: 12px;
-        padding-top: 22px;
+        .header-btn-open {
+            display: none;
         }
 
-       
+        .header-contacts {
+            display: block;
+            margin-left: auto;
+            flex-grow: 0;
 
-
-.mobil-header{
-    display: flex;
-    border: 1px solid rgba(252, 249, 249, 0.1);
-        border-radius: 15px;
-        padding: 14px 28px;
-        width: 193px;
-        height: 48px;
-        background: transparent;
-        gap: 20px;
-        margin-top: 20px;
-}
-
-.header-number-button {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.42857;
-        text-transform: uppercase;
-        color: #fcf9f9;
-}
-
-.header-number-button:hover,
-.header-number-button:focus {
-    box-shadow : #ecd979;
-    transition: 0.2s cubic-bezier(0.34, 0.78, 0.68, 0.41);
-}
-
-.header-icon-social {
-    fill:#fcf9f9;
-}
-
-.header-social {
-    border: 1px solid rgba(252, 249, 249, 0.1);
-    border-radius: 15px;
-    padding: 8px;
-    width: 44px;
-    height: 44px;
-    display: flex;
-    background: rgba(252, 249, 249, 0.1);
-}
-
-
-
-.header-burger {
-    stroke: #ecd979;
-}
-.burger-header-one {
-    line-height: 0;
-    display: block;
-}
-.header-for:hover,
-.header-for:focus{
-    color: #ecd979;
-    transition: 0.2s cubic-bezier(0.34, 0.78, 0.68, 0.41);
-}
-
-.header-number-button:hover,
-.header-number-button:focus {
-box-shadow: #ecd979;
-
-transition: 0.2s cubic-bezier(0.34, 0.78, 0.68, 0.41);
         }
+
         
-.header-social:hover,
-.header-social:focus {
-    border-color: #ecd979;
-   
-    transition: 0.2s cubic-bezier(0.34, 0.78, 0.68, 0.41);
-}
-        @media screen and (min-width:320px) and (max-width:767px) {
-    .header-list-header {
-            display: none;
+    
+        .header-contacts-link{
+            font-size: 14px;
+            line-height: 1.4;
+            text-transform: uppercase;
+            color: #fcf9f9;
+            display: inline-block;
+                border: 1px solid rgba(252, 249, 249, 0.1);
+                border-radius: 15px;
+                padding: 14px 28px;
+                min-width: 193px;
+                height: 48px;
+                background-color: transparent;
+                transition: border-color 0.2s cubic-bezier(0.34, 0.78, 0.68, 0.41);
         }
     
-
-    .mobail-header {
-            display: none;
-        }
-    
-    .header-number-button {
-            display: none;
-        }
-    
-    .mobil-header {
-            display: none;
+        .header-contacts-link:hover,
+        .header-contacts-link:focus {
+            border-color: #ecd979;
+            
         }
 
-    .header-social-header {
-        justify-content: space-between;
-    }
-    .header-social-list-one {
-      border: none;
-      display: flex;
-    }
-    .burger-header {
-        display: flex;
-    }
-    .header-div-header {
-        justify-content: space-between;
-    }
-
-}
-
-@media screen and (min-width: 768px) and (max-width:1279px) {
- .header-list-header {
-    display: none;
- }   
- .mobail-header {
-    display: none;
- }
- .header-number-button{
-    display: none;
+        .header-social {
+          flex-grow: 0;
+        }
  }
 
- .mobil-header {
-    display: none;
+ @media screen and (min-width:1440px) {
+    .container-header {
+        column-gap: 20px;
+    }
  }
- .header-burger {
-    width: 44px;
-    height: 30px;
- }
-.header-list-all {
- padding-top: 24px;
-}
-
-.logo-header {
-    margin-top: 26px;
-}
-
-.header-burger {
-    width: 44px;
-    height: 40px;
-}
  
-}
-
-@media screen and (min-width:1280px) and (max-width:1439px) {
-    .header-social-list-one {
-            display: none;
-        }
-    .mobil-header {
-        margin-top: 22px;
-    }
-    .header-social-header {
-        margin-top: 24px;
-    }
-    .header-list-all {
-        padding-top: 0;
-    }
-    
-}
-
-@media screen and (min-width:1440px) {
-    .header-social-list-one {
-        display: none;
-    }
-}
+ 
