@@ -22,18 +22,19 @@
   height: 100%;
   overflow: auto;
   background-color: #ecd979;
-  background-image: url(../img/bg/bg-element-grey.svg);
+  background-image: url(/img/bg/bg-element-black.svg);
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-size: auto 253px;
+  background-position: left 0px bottom -50px;
   transform: translateX(100%);
   transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mobile-menu.is-open {
+.backdrop.is-open .mobile-menu {
   transform: translateX(0);
 }
 
-.is-open {
+.backdrop.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -88,4 +89,22 @@
   font-size: 14px;
   line-height: 1.28;
   text-transform: uppercase;
+}
+
+.mobile-menu-phone-link:hover,
+.mobile-menu-phone-link:focus {
+  border: 1px solid #ecd979;
+}
+
+@media screen and (min-width: 768px) {
+  .tablet-close-icon {
+    display: block;
+  }
+  .mobile-menu-phone-link {
+    font-size: 14px;
+    line-height: 1.42857;
+  }
+  .mobile-menu {
+    width: 380px;
+  }
 }
