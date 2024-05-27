@@ -57,7 +57,23 @@
   .hero-made-icon {
     fill: #ecd979;
     margin-bottom: 16px;
+    animation: rotate 10s linear infinite;
   }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(360deg);
+    }
+    50% {
+      transform: rotate(-90deg);
+      scale: 1.5;
+    }
+    100% {
+      transform: rotate(360deg);
+      scale: 1;
+    }
+  }
+
   .hero-made-text {
     letter-spacing: -0.04em;
     text-align: center;
