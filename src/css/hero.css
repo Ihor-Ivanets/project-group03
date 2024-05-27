@@ -8,53 +8,24 @@ font-weight: 400;
 font-size: 44px;
 line-height: 1.09;
 letter-spacing: -0.03em;
-color: #fcf9f9;     
-text-align: start;
-width: auto;
-height: auto;
 margin-bottom: 20px;
-margin-left: auto; 
-margin-right: auto;
 }
-.color-hero-tagline {
-color: #ecd979;
-}
-.hero-button-order {
-display: inline-flex;
-font-weight: 600;
-font-size: 14px;
-letter-spacing: -0.04em;
-text-transform: uppercase;
-color: #fcf9f9;
-border: 1px solid rgba(252, 249, 249, 0.1);
-border-radius: 15px;
+
+.hero-button {
+display: inline-flex; 
 padding: 14px 36px;
 min-width: 154px;
 height: 49px;
 margin-left: 70px; 
-margin-bottom: 20px;
-background-color: #1c2225;
-transition: border 0.2s cubic-bezier(0.34, 0.78, 0.68, 0.41);  
-align-items: center;
-justify-content: center; 
-  }
-.hero-button-icon {
-fill: #ecd979;
-margin-left: 10px;
-transform: rotate(-30deg);
+margin-bottom: 40px;
+}
+.hero-btn-icon {
 width: 24px;
 height: 16px;
 }
-.hero-button-order:hover,
-.hero-button-order:focus {
-border: 1px solid #ecd979;
-}   
-.hero-img {
-display: block;
-}
+
 .hero-made-wrapper {
 display: none;
-pointer-events: none;
 }
 
 @media screen and (min-width: 768px)  {
@@ -64,26 +35,20 @@ padding-bottom: 50px;
 }
 .hero-tablet-wrapper {
 display: flex;
-justify-content: center;    
 }
 .hero-mobile-wrapper {
-margin-left: 0;
 margin-right: 40px;
 }
-.hero-img {
-display: block;
-}
+
 .hero-made-wrapper {
 display: flex;
 width: 115px;
-height: 111px;
-pointer-events: auto;
+/* height: 111px; */
 flex-direction: column;
 align-items: center;
-justify-content: center; 
 margin-top: 16px;
 }
-.hero-button-order {
+.hero-button {
 padding: 14px 39px;
 min-width: 168px;
 height: 50px; 
@@ -95,25 +60,21 @@ fill: #ecd979;
 margin-bottom: 16px;
 }
 .hero-made-text {
-        
-font-weight: 400;
-font-size: 16px;
 letter-spacing: -0.04em;
 text-align: center;
 color: rgba(252, 249, 249, 0.4);
 }
 .hero-tagline {
 width: 549px;
-height: 192px;
 font-size: 54px;
 line-height: 1.18519;
 letter-spacing: -0.03em;
 margin-bottom: 40px;
 }
-.hero-button-order {
+.hero-button {
 font-size: 14px;}
 
-.hero-button-icon {
+.hero-btn-icon {
 height: 17px;
 }
 }
@@ -138,5 +99,24 @@ margin-bottom: 0;
 }  
 .hero-tagline {
 width: 518px;
+}
+}
+@media screen and (min-width: 1440px)  {
+.hero-tagline {
+font-size: 64px;
+line-height: 1.15625;
+width: 630px; 
+}
+.hero-tablet-wrapper {
+column-gap: 61px;
+margin-left: 40px;
+padding-top: 66px;
+}
+.hero-mobile-wrapper {
+margin: 0;
+padding-top:0;
+}
+.hero-made-wrapper {
+margin-top: 0;
 }
 }
