@@ -24,6 +24,14 @@
   margin-bottom: 18px;
 }
 
+.collection-image {
+  transition: transform 0.2s cubic-bezier(0.34, 0.78, 0.68, 0.41);
+}
+
+.collection-image:hover {
+  transform: scale(1.1);
+}
+
 .collection-list-title {
   font-weight: 500;
   font-size: 14px;
