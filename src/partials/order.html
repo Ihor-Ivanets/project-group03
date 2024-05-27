@@ -1,0 +1,102 @@
+<section id="order" class="order">
+  <div class="container ord">
+    <div class="back-fon">
+      <div class="order-wrap">
+        <h2 class="title-order section-title">
+          <span class="spn-order">Your order</span> is our priority:
+          Personalized approach and quality of service
+        </h2>
+        <form action="order-form">
+          <div class="order-input">
+            <input
+              class="inp-order"
+              type="text"
+              name="user-name"
+              pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ]+"
+              placeholder="Enter your full name"
+              required
+            />
+
+            <input
+              class="inp-order"
+              type="email"
+              name="user-email"
+              placeholder="Enter your email"
+              required
+            />
+
+            <textarea
+              class="area-order"
+              name="user-comments"
+              id=""
+              placeholder="Comments"
+            ></textarea>
+          </div>
+          <button class="order-btn btn" type="submit">
+            Send
+            <svg class="btn-icon" width="26" height="10">
+              <use href="../img/icons.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+      <div class="image-ord">
+        <picture>
+          <source
+            media="(min-width: 1440px)"
+            srcset="
+              ./img/order/3desktop.webp    1x,
+              ./img/order/3desktop-2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1440px)"
+            srcset="
+              ./img/order/womens-shirt-desktop1440.jpg 1x,
+              ./img/order/3desktop-2x.jpg              2x
+            "
+            type="image/png"
+          />
+
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./img/order/2desktop.webp    1x,
+              ./img/order/2desktop-2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./img/order/womens-shirt-desktop1280.jpg    1x,
+              ./img/order/womens-shirt-desktop1280@2x.jpg 2x
+            "
+            type="image/png"
+          />
+
+          <source
+            media="(max-width: 1279px)"
+            srcset="./img/order/1tablet.webp 1x, ./img/order/1tablet-2x.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 1279px)"
+            srcset="
+              ./img/order/womens-shirt-tablet.jpg    1x,
+              ./img/order/womens-shirt-tablet@2x.jpg 2x
+            "
+            type="image/png"
+          />
+
+          <img
+            src="./img/order/womens-shirt-desktop1440.jpg"
+            alt="womens shirt"
+            class="order-img"
+          />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
