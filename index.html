@@ -5,6 +5,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/project-group03/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/project-group03/favicon-16x16.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Online store with Ukrainian shirts Vyshyvanka. All products are handmade."
+    />
     <title>Vyshyvanka Vibes</title>
     
     <script type="module" crossorigin src="/project-group03/commonHelpers.js"></script>
@@ -59,6 +63,7 @@
           href="https://www.facebook.com"
           target="_blank"
           class="header-social-link"
+          aria-label="facebook"
         >
           <svg class="header-social-icon" width="28" height="28">
             <use href="/project-group03/assets/icons-c71b5d3b.svg#icon-facebook"></use>
@@ -70,6 +75,7 @@
           href="https://www.instagram.com"
           target="_blank"
           class="header-social-link"
+          aria-label="instagram"
         >
           <svg class="header-social-icon" width="28" height="28">
             <use href="/project-group03/assets/icons-c71b5d3b.svg#icon-instagram"></use>
@@ -81,6 +87,7 @@
           href="https://www.youtube.com"
           target="_blank"
           class="header-social-link"
+          aria-label="youtube"
         >
           <svg class="header-social-icon" width="28" height="28">
             <use href="/project-group03/assets/icons-c71b5d3b.svg#icon-youtube"></use>
@@ -93,6 +100,7 @@
       aria-expanded="false"
       aria-controls="mobile-menu"
       type="button"
+      aria-label="open mobile menu"
     >
       <svg class="header-btn-open-icon" width="36" height="44">
         <use href="/project-group03/assets/icons-c71b5d3b.svg#icon-btn-open"></use>
@@ -163,7 +171,10 @@
     </picture>
   </div>
 
-  <button class="btn-scroll-top is-btnshow is-btnshow-hide">
+  <button
+    class="btn-scroll-top is-btnshow is-btnshow-hide"
+    aria-label="Button scroll top"
+  >
     <svg class="btn-scroll-top-icon" width="55" height="55">
       <use href="/project-group03/assets/icons-c71b5d3b.svg#icon-arrow-top"></use>
     </svg>
@@ -644,7 +655,7 @@
           <button class="order-btn btn" type="submit">
             Send
             <svg class="btn-icon" width="26" height="10">
-              <use href="../img/icons.svg#icon-arrow"></use>
+              <use href="/project-group03/assets/icons-c71b5d3b.svg#icon-arrow"></use>
             </svg>
           </button>
         </form>
