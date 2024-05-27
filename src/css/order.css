@@ -1,0 +1,149 @@
+.ord{
+    padding-top: 620px;
+    padding-bottom: 40px;
+    background-image: url('../img/order/mob-fon.webp');
+    background-repeat: no-repeat;
+    background-position: center 40px;
+    background-size: auto 500px;
+}
+
+.image-ord{display: none;
+}
+
+.title-order{margin-bottom: 40px;
+}
+
+.order-form {max-width: 508px;
+}
+
+.inp-order,.area-order{display: block;
+    width: 100%;
+    height: 47px;
+    border: 1px solid rgba(252, 249, 249, 0.1);
+    border-radius: 15px;
+    padding: 14px 16px;
+    background-color: transparent;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: #fcf9f9;
+}
+
+.inp-order::placeholder,
+.area-order::placeholder {
+color: rgba(252, 249, 249, 0.5);
+}
+
+.inp-order:focus,
+.area-order:focus {
+outline: transparent;
+border: 1px solid rgba(252, 249, 249, 0.6);
+}
+
+.inp-order:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.area-order {
+    resize: none;
+    border-radius: 8px;
+    min-height: 196px;
+    margin-bottom: 40px;
+}
+
+.order-btn {margin: 0 auto;
+}
+
+.spn-order{color:#ECD979;
+}
+
+@media (min-resolution: 192dpi) {
+    .ord {
+        background-image: url('../img/order/girl-mobile@2x.webp');
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .ord {
+    padding-top: 926px;
+    padding-bottom: 129px;
+    background: url('../img/order/tabl-fon.webp') no-repeat center 50px /
+    auto 776px,
+        url('../img/bg/bg-element-grey.svg') no-repeat left -221px bottom 50px / auto;
+    }
+
+    .back-fon {
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+    }
+
+    .image-ord {
+    display: block;
+    }
+
+    .title-order {
+    max-width: 542px;
+    }
+
+    .inp-order,.area-order{
+    font-size: 16px;
+    }
+
+    .order-btn {
+    margin: 0;
+    }
+}
+
+@media (min-resolution: 192dpi) and (min-width: 768px) {
+    .ord{
+    background: url('../img/order/girl-tablet@2x.webp') no-repeat center 50px /
+        auto 776px,
+        url('../img/bg/bg-element-grey.svg') no-repeat left -221px bottom 50px / auto;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .ord {
+    padding-top: 1001px;
+    padding-bottom: 75px;
+    background: url('../img/order/1280-fon.webp') no-repeat center 75px /
+        auto 776px,
+        url('../img/bg/bg-element-grey.svg') no-repeat left -245px bottom 79px / auto;
+    }
+
+    .back-fon {
+    flex-direction: row;
+    column-gap: 50px;
+    }
+
+    .image-ord {
+    order: -1;
+    display: block;
+    flex: 1 1 50%;
+    }
+
+    .order-wrap {
+    flex: 1 1 50%;
+    }
+}
+
+@media (min-resolution: 192dpi) and (min-width: 1280px) {
+    .ord {
+    background: url('../img/order/girl-dekstop1280@2x.webp') no-repeat center
+        75px / auto 776px,
+        url('../img/bg/bg-element-grey.svg') no-repeat left -245px bottom 79px / auto;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .ord {
+    padding-top: 1001px;
+    padding-bottom: 75px;
+    }
+    .title-order {
+    max-width: 666px;
+    }
+    .image-ord {
+    max-width: 524px;
+    }
+}
