@@ -75,27 +75,7 @@
     font-size: 14px;
     line-height: 1.2;
     text-transform: uppercase;
-    padding-bottom: 5px;
-    position: relative;
     transition: color 0.2s cubic-bezier(0.34, 0.78, 0.68, 0.41);
-  }
-
-  .header-menu-link::after {
-    content: '';
-    position: absolute;
-    height: 2px;
-    background-color: #ecd979;
-    bottom: 0;
-    left: 50%;
-    width: 0;
-    border-radius: 1px;
-    transition: width 0.2s cubic-bezier(0.34, 0.78, 0.68, 0.41),
-      left 0.2s cubic-bezier(0.34, 0.78, 0.68, 0.41);
-  }
-
-  .header-menu-link:hover::after {
-    width: 100%;
-    left: 0;
   }
 
   .header-menu-link:hover,
