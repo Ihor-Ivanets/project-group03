@@ -9,7 +9,7 @@
     
     <script type="module" crossorigin src="/project-group03/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/project-group03/assets/vendor-2d6b8d19.js">
-    <link rel="stylesheet" href="/project-group03/assets/index-f1d71c9d.css">
+    <link rel="stylesheet" href="/project-group03/assets/index-02878714.css">
   </head>
   <body>
     <header class="first-header">
@@ -606,7 +606,94 @@
   </div>
 </section>
 
-      
+      <section id="order" class="order">
+  <div class="container ord">
+    <div class="back-fon">
+      <div class="order-wrap">
+        <h2 class="title-order section-title">
+          <span class="spn-order">Your order</span> is our priority:
+          Personalized approach and quality of service
+        </h2>
+        <form action="order-form">
+          <div class="order-input">
+            <input
+              class="inp-order"
+              type="text"
+              name="user-name"
+              pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ]+"
+              placeholder="Enter your full name"
+              required
+            />
+
+            <input
+              class="inp-order"
+              type="email"
+              name="user-email"
+              placeholder="Enter your email"
+              required
+            />
+
+            <textarea
+              class="area-order"
+              name="user-comments"
+              id=""
+              placeholder="Comments"
+            ></textarea>
+          </div>
+          <button class="order-btn btn" type="submit">
+            Send
+            <svg class="btn-icon" width="26" height="10">
+              <use href="../img/icons.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+      <div class="image-ord">
+        <picture>
+          <source
+            media="(min-width: 1440px)"
+            srcset="/project-group03/assets/3desktop-457acecc.webp 1x, /project-group03/assets/3desktop-2x-4cfea307.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1440px)"
+            srcset="/project-group03/assets/womens-shirt-desktop1440-26756581.jpg 1x, /project-group03/assets/3desktop-2x-e007b470.jpg 2x"
+            type="image/png"
+          />
+
+          <source
+            media="(min-width: 1280px)"
+            srcset="/project-group03/assets/2desktop-84ad238e.webp 1x, /project-group03/assets/2desktop-2x-8a03d49a.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="/project-group03/assets/womens-shirt-desktop1280-209b438c.jpg 1x, /project-group03/assets/womens-shirt-desktop1280@2x-f301fe3a.jpg 2x"
+            type="image/png"
+          />
+
+          <source
+            media="(max-width: 1279px)"
+            srcset="/project-group03/assets/1tablet-9c441c6a.webp 1x, /project-group03/assets/1tablet-2x-a7330b18.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 1279px)"
+            srcset="/project-group03/assets/womens-shirt-tablet-297117a1.jpg 1x, /project-group03/assets/womens-shirt-tablet@2x-718f78e8.jpg 2x"
+            type="image/png"
+          />
+
+          <img
+            src="/project-group03/assets/womens-shirt-desktop1440-26756581.jpg"
+            alt="womens shirt"
+            class="order-img"
+          />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
       <section class="testimonials" id="testimonials">
   <div class="container">
     <h2 class="section-title testimonials-section-title">Testimonials</h2>
