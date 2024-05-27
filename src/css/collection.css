@@ -1,7 +1,7 @@
 .collection-container {
   padding-top: 18px;
   padding-bottom: 40px;
-  background-image: url('../img/bg/bg-element-yellow.svg');
+  background-image: url('../img/bg/bg-element-yellow.png');
   background-repeat: no-repeat;
   background-size: auto 177px;
   background-position: left -129px top 316px;
@@ -36,6 +36,12 @@
   font-size: 14px;
   letter-spacing: 0.05em;
   color: rgba(252, 249, 249, 0.4);
+}
+
+@media (min-resolution: 192dpi) {
+  .collection-container {
+    background-image: url('../img/bg/bg-element-yellow@2x.png');
+  }
 }
 
 @media screen and (min-width: 768px) {
