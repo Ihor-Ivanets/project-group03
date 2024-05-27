@@ -33,7 +33,7 @@
   closeMenuBtn.addEventListener('click', toggleMenu);
 
   // Вказати брейкпоінт після якого повинна зачинятися
-  window.matchMedia('(min-width: 375px)').addEventListener('change', e => {
+  window.matchMedia('(min-width: 767px)').addEventListener('change', e => {
     if (!e.matches) return;
     mobileMenu.classList.remove('is-open');
     openMenuBtn.setAttribute('aria-expanded', false);

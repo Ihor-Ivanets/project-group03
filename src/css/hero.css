@@ -42,7 +42,7 @@
   .hero-made-wrapper {
     display: flex;
     width: 115px;
-    /* height: 111px; */
+    height: 111px;
     flex-direction: column;
     align-items: center;
     margin-top: 16px;
@@ -119,4 +119,33 @@
   .hero-made-wrapper {
     margin-top: 0;
   }
+}
+
+.btn-scroll-top {
+  background-color: transparent;
+  padding: 0;
+  line-height: 0;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 20;
+}
+
+.btn-scroll-top-icon {
+  fill: rgba(252, 249, 249, 0.4);
+  transition: fill 0.2s cubic-bezier(0.34, 0.78, 0.68, 0.41);
+}
+
+.btn-scroll-top-icon:hover,
+.btn-scroll-top-icon:focus {
+  fill: #ecd979;
+}
+
+.is-btnshow {
+  opacity: 1;
+  transition: opacity 0.2s cubic-bezier(0.34, 0.78, 0.68, 0.41);
+}
+
+.is-btnshow-hide {
+  opacity: 0;
 }
