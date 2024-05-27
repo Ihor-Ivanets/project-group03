@@ -26,6 +26,10 @@
   margin-bottom: 20px;
 }
 
+.about-img {
+  border-radius: 4px;
+}
+
 @media (min-resolution: 192dpi) {
   .container-about {
     background-image: url('../img/bg/bg-element-gray@2x.png');
