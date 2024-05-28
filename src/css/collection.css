@@ -65,6 +65,10 @@
     column-gap: 20px;
     flex-wrap: wrap;
   }
+
+  .collection-list-item {
+    width: calc((100% - 20px) / 2);
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -77,5 +81,9 @@
 
   .collection-list {
     row-gap: 40px;
+  }
+
+  .collection-list-item {
+    width: calc((100% - 40px) / 3);
   }
 }
