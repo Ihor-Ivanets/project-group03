@@ -59,6 +59,10 @@
   margin: 0 auto;
 }
 
+.order-img {
+  border-radius: 4px;
+}
+
 @media (min-resolution: 192dpi) {
   .ord {
     background-image: url('../img/order/girl-mobile@2x.webp');
