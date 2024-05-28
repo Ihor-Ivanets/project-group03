@@ -22,6 +22,8 @@
   border-radius: 4px;
   overflow: hidden;
   margin-bottom: 18px;
+  position: relative;
+  z-index: 2;
 }
 
 .collection-image {
@@ -38,6 +40,46 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   margin-bottom: 8px;
+}
+
+.collection-h-p {
+  position: relative;
+  z-index: 2;
+}
+
+.collection-list-item {
+  position: relative;
+}
+
+.collection-item-overlay {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 105%;
+  height: 120%;
+  background-color: #232b2f;
+  opacity: 0;
+  transition: box-shadow 0.2s cubic-bezier(0.34, 0.78, 0.68, 0.41);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 2.5%;
+  padding-bottom: 10px;
+}
+
+.collection-list-item:hover .collection-item-overlay {
+  opacity: 1;
+  box-shadow: 0 1px 5px #ecd97942;
+}
+
+.collection-list-item:hover {
+  z-index: 5;
+}
+
+.collection-btn {
+  margin-top: auto;
 }
 
 .collection-list-text {
