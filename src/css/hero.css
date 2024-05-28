@@ -1,5 +1,5 @@
 .hero-container {
-  padding-top: 84px;
+  padding-top: 58px;
   padding-bottom: 40px;
 }
 .hero-tagline {
@@ -29,7 +29,7 @@
 
 @media screen and (min-width: 768px) {
   .hero-container {
-    padding-top: 100px;
+    padding-top: 74px;
     padding-bottom: 50px;
   }
   .hero-tablet-wrapper {

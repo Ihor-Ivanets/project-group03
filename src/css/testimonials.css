@@ -54,7 +54,7 @@
 
 @media screen and (min-width: 768px) {
   .testimonials {
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 77px;
   }
 
@@ -64,7 +64,7 @@
 }
 @media screen and (min-width: 1280px) {
   .testimonials {
-    padding-top: 150px;
+    padding-top: 75px;
     padding-bottom: 127px;
   }
 }
