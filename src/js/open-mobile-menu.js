@@ -32,7 +32,12 @@
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
 
-  // Вказати брейкпоінт після якого повинна зачинятися
+  mobileMenu.addEventListener('click', event => {
+    if (event.target === mobileMenu) {
+      toggleMenu();
+    }
+  });
+
   window.matchMedia('(min-width: 1279px)').addEventListener('change', e => {
     if (!e.matches) return;
     mobileMenu.classList.remove('is-open');

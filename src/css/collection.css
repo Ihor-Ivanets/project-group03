@@ -60,7 +60,8 @@
   height: 120%;
   background-color: #232b2f;
   opacity: 0;
-  transition: box-shadow 0.2s cubic-bezier(0.34, 0.78, 0.68, 0.41);
+  transition: box-shadow 0.1s cubic-bezier(0.34, 0.78, 0.68, 0.41),
+    opacity 0.1s cubic-bezier(0.34, 0.78, 0.68, 0.41);
   border-radius: 4px;
   display: flex;
   flex-direction: column;
